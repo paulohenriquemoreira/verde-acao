@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <title>Verde Ação</title>
+</head>
+<body>
+    <header>
+        <h2>Verde Ação</h2>
+
+        <nav>
+            <a href="#">Atividades</a>
+            <a href="#">Cadastre-se</a>
+        </nav>
+    </header>
+    <main>
+        <section class="background">
+            <h1>Verde Ação</h1>
+            <p>Ser voluntário na Verde Ação é plantar esperança e colher transformação.
+                Juntos, cuidamos do planeta e inspiramos mudanças reais!</p>
+            <button>Quero ser voluntário</button>
+        </section>
+        <section class="cards-atividades">
+            <article class="cards">
+                <img src="./assets/girassol.png" alt="Imagem de um campo de Girassóis" class="img-cards">
+                <h3 class="titulo-cards">Plantio de mudas</h3>
+                <p class="paragrafo-cards">Cada muda plantada ajuda a restaurar o meio ambiente</p>
+                <button class="button-cards">Ver mais</button>
+            </article>
+            <article class="cards">
+                <img src="./assets/criancas.png" alt="Imagem de crianças com faixa de simbolos de reciclagem" class="img-cards">
+                <h3 class="titulo-cards">Educação Ambiental</h3>
+                <p class="paragrafo-cards">Promove oficinas e rodas de conversas</p>
+                <button class="button-cards">Ver mais</button>
+            </article>
+            <article class="cards">
+                <img src="./assets/plantacao.png" alt="Imagem monstrando o cuidado com a plantação" class="img-cards">
+                <h3 class="titulo-cards">Cuidados</h3>
+                <p class="paragrafo-cards">Ajude a manter areas preservadas</p>
+                <button class="button-cards">Ver mais</button>
+            </article>
+            <article class="cards">
+                <img src="./assets/florestas.png" alt="Imagem de uma floresta" class="img-cards">
+                <h3 class="titulo-cards">Mapeamento</h3>
+                <p class="paragrafo-cards">Indentifique areas que precisam de mapeamento</p>
+                <button class="button-cards">Ver mais</button>
+            </article>
+        </section>
+        <section class="formulario">
+            <h3 class="titulo-formulario">Cadastre-se como voluntário</h3>
+            <p class="paragrafo-formulario">Faça parte de ações que transformam o mundo. Com pequenas atitudes, você pode gerar grandes impactos na natureza e na comunidade</p>
+            <form action="" class="form">
+                <label for="Nome" class="label-formulario">Nome:</label>
+                <input type="text" id="Nome" name="Nome" class="input-formulario" placeholder="Nome" required/>
+                <label for="email" class="label-formulario">E-mail:</label>
+                <input type="email" id="E-mail" name="email" class="input-formulario" placeholder="email" required/>
+                <label for="cidade" class="label-formulario">Cidade:</label>
+                <input type="atividade" id="cidade" name="cidade" class="input-formulario" placeholder="Cidade" required/>
+                <label for="atividade" class="label-formulario">Atividade:</label>
+                <select name="atividade" id="atividade" class="select-form" placeholder="Selecione a atividade">
+                    <option value="">Selecione a atividade</option>
+                    <option value="">Plantio de mudas</option>
+                    <option value="">Educação Ambiental</option>
+                    <option value="">Cuidados</option>
+                    <option value="">Mapeamento</option>                    
+                </select>
+                <button type="submit" class="botao-form">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-base">
+        <p class="paragrafo-footer">© Copyright 2025 - Verde Ação - Todos os direitos reservados </p>
+    </footer>
+</body>
+</html>

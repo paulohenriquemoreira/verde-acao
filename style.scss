@@ -1,0 +1,236 @@
+* {
+    margin: 0; // Remove o espaçamento externo padrão dos navegadores
+    padding: 0; // Remove preenchimento padrão
+    box-sizing: border-box; // Inclui padding e borda no cálculo do tamanho
+}
+
+$background-section-card:#F1F8E9;
+$background-cards:#FFFFFF;
+$background-form:#E8F5E9;
+$verde:#66BB6A;
+$cinza:#767676;
+$cinza-placeholder:#8E8E8E;
+$preto:#000000;
+$branco:#ffffff;
+$fonte-principal:Sansita Swashed;
+$fonte-secundaria:Roboto;
+
+
+header {
+    background-color: $verde;
+    height: 10vh;
+    color: $branco;
+    
+    h2 {
+        
+        display: inline-block; // Deixa na mesma linha,e permite o controle de largura e altura
+        width: 40%;
+        padding-left: 160px;
+        margin-top: 10px;        
+        font-family: $fonte-principal;
+        font-weight: 700 bold;
+        font-size: 2rem;
+    }
+
+    /* O nav também é block por padrão, então muda o comportamento */
+
+    nav {
+        display: block; //Ocupa toda a linha
+        display: inline; //Ocupa somente o tamanho necessário
+        width: 40%; //Com o inline, ele não aceita tamanhos.
+        display: inline-block; // Deixa namesma linha,e permite o controle de largura e altura
+        text-align: end;
+
+        a {
+            margin-left: 40px; // espaço entre os links
+            font-family: $fonte-secundaria;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $branco;
+            text-decoration: none; //Tira a estilização padrão da tag A
+        }
+    }
+}
+main{
+    max-width: 100vw; /* Vw - largura da viewport, 100% da largura da janela visível do navegador */
+}
+
+.background{
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    color: $branco;
+    text-align: center;
+
+
+    h1{
+        font-family: $fonte-principal;
+        font-size: 6rem;
+        font-weight: 700;
+        padding-top: 0.8em;
+    }
+
+    p{
+        font-family: $fonte-secundaria;        
+        font-size: 1.6rem;
+        font-weight: 700;        
+        padding: 1em 11em;
+
+    }
+
+    button{
+        background-color: $verde;
+        border: none;
+        border-radius: 68px;
+        padding: 20px 40px;
+        margin-top: 30px;
+        font-family: $fonte-secundaria;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $branco;
+        
+    }
+        
+}
+
+.cards-atividades{
+    background-color: $background-section-card;    
+    height: 85vh;
+    padding: 6rem;
+    font-family: $fonte-secundaria;
+
+    .cards{
+        display: inline-block;
+        vertical-align: middle;
+        background-color: $background-cards;
+        width: 18vw;
+        height: 58vh;
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        
+        .img-cards{
+            width: 100%;
+            height: 197px;
+            border-radius: 15px 15px 0 0;
+        
+        }
+    }
+
+    .titulo-cards{
+        font-weight: 700;
+        font-size: 1.6rem;
+        font-style: bold;
+        margin-top: 10px;
+        
+    }
+
+    .paragrafo-cards{
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-left: 18px;
+        margin-right: 18px;        
+        
+    }
+
+    .button-cards{
+        padding: 10px 30px;
+        border-radius: 29px;
+        background-color: $verde;
+        color: $branco;
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+        font-style: bold;
+        margin-top: 30px;
+    }
+
+}
+
+.formulario{
+    background-color: $background-form;
+    padding: 2rem 25rem;    
+    font-family: $fonte-secundaria;
+
+    .titulo-formulario{
+        font-weight: 700;
+        font-style: bold;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .paragrafo-formulario{
+        color: $cinza;
+        font-weight: 400;
+        font-size: 1.3rem;
+        margin-top: 20px; 
+        text-align: center;       
+    }
+
+    .form{
+        margin-top: 20px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .label-formulario{
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 10px;
+        
+    }
+
+
+    .input-formulario, .select-form{
+        width: 500px;
+        height: 54px;
+        border-radius: 25px;
+        border: none;
+        background-color: $branco;
+        padding-left: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: $fonte-secundaria;
+        color:$cinza-placeholder;
+    }
+
+    .botao-form{
+        width: 500px;
+        height: 60px;
+        border-radius: 25px;
+        background-color: $verde;
+        color: $branco;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: 700;
+        font-style: bold;
+        margin-top: 30px;
+    }
+}
+
+.footer-base{
+    height: 5vh;
+    background-color: $verde;
+    color: $branco;
+    font-family: $fonte-secundaria;
+    text-align: center;
+    padding: 30px;
+
+
+    .paragrafo-footer{
+        font-size: 1rem;
+        font-weight: 700;
+        font-style: bold;
+        margin-bottom: 10px;
+    }
+}
+    
