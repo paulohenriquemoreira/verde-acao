@@ -18,8 +18,9 @@ $fonte-secundaria:Roboto;
 
 header {
     background-color: $verde;
-    height: 10vh;
+    height: 15vh;
     color: $branco;
+    padding: 1em 3em;
     
     h2 {
         
@@ -37,7 +38,7 @@ header {
     nav {
         display: block; //Ocupa toda a linha
         display: inline; //Ocupa somente o tamanho necessário
-        width: 40%; //Com o inline, ele não aceita tamanhos.
+        width: 50%; //Com o inline, ele não aceita tamanhos.
         display: inline-block; // Deixa namesma linha,e permite o controle de largura e altura
         text-align: end;
 
@@ -58,7 +59,7 @@ main{
 .background{
     background-image: url("./assets/background.png");
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 80vh;
     background-position: center;
     background-size: cover;
     color: $branco;
@@ -86,6 +87,7 @@ main{
         border-radius: 68px;
         padding: 20px 40px;
         margin-top: 30px;
+        margin-bottom: 30px;
         font-family: $fonte-secundaria;
         font-size: 1.3rem;
         font-weight: 700;
@@ -106,7 +108,7 @@ main{
         vertical-align: middle;
         background-color: $background-cards;
         width: 18vw;
-        height: 58vh;
+        height: 63vh;
         text-align: center;
         border-radius: 15px;
         margin-left: 20px;
@@ -123,9 +125,10 @@ main{
 
     .titulo-cards{
         font-weight: 700;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-style: bold;
         margin-top: 10px;
+        font-family: $fonte-secundaria;
         
     }
 
@@ -134,7 +137,8 @@ main{
         font-size: 1rem;
         margin-top: 15px;
         margin-left: 18px;
-        margin-right: 18px;        
+        margin-right: 18px;
+        font-family: $fonte-secundaria;       
         
     }
 
@@ -167,7 +171,7 @@ main{
     .paragrafo-formulario{
         color: $cinza;
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-top: 20px; 
         text-align: center;       
     }

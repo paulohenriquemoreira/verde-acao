@@ -7,8 +7,9 @@
 
 header {
   background-color: #66BB6A;
-  height: 10vh;
+  height: 15vh;
   color: #ffffff;
+  padding: 1em 3em;
   /* O nav também é block por padrão, então muda o comportamento */
 }
 header h2 {
@@ -23,7 +24,7 @@ header h2 {
 header nav {
   display: block;
   display: inline;
-  width: 40%;
+  width: 50%;
   display: inline-block;
   text-align: end;
 }
@@ -43,7 +44,7 @@ main {
 .background {
   background-image: url("./assets/background.png");
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 80vh;
   background-position: center;
   background-size: cover;
   color: #ffffff;
@@ -67,6 +68,7 @@ main {
   border-radius: 68px;
   padding: 20px 40px;
   margin-top: 30px;
+  margin-bottom: 30px;
   font-family: Roboto;
   font-size: 1.3rem;
   font-weight: 700;
@@ -84,7 +86,7 @@ main {
   vertical-align: middle;
   background-color: #FFFFFF;
   width: 18vw;
-  height: 58vh;
+  height: 63vh;
   text-align: center;
   border-radius: 15px;
   margin-left: 20px;
@@ -97,9 +99,10 @@ main {
 }
 .cards-atividades .titulo-cards {
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-style: bold;
   margin-top: 10px;
+  font-family: Roboto;
 }
 .cards-atividades .paragrafo-cards {
   font-weight: 400;
@@ -107,6 +110,7 @@ main {
   margin-top: 15px;
   margin-left: 18px;
   margin-right: 18px;
+  font-family: Roboto;
 }
 .cards-atividades .button-cards {
   padding: 10px 30px;
@@ -134,7 +138,7 @@ main {
 .formulario .paragrafo-formulario {
   color: #767676;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-top: 20px;
   text-align: center;
 }
